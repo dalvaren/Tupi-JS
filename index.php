@@ -16,10 +16,8 @@
   <body>
     <div class="menu">
       <a href="javascript: Tupi.hideShow('.item1');">Simple display screen 1</a><br />
-      <a href="javascript: Tupi.hide('.item1');$('.item1').fadeIn('slow');">Display screen 1 with fade effect</a><br />
       <a href="javascript: Tupi.hideReplace('.item2', Tupi.getStaticPage('/tupi/page1.php'));">Display only screen 2 from AJAX request</a><br />
       <a href="javascript: Tupi.hideReplace('.item2', Tupi.getStaticPage('/tupi/page1.php'), undefined, false, false);">Display only screen 2 from AJAX request, but without animations</a><br />
-<!--      <a href="javascript: $('.item2').fadeOut('slow', function(){ Tupi.replace('.item2', Tupi.getStaticPage('/tupi/page2.php'));$('.item2').fadeIn('slow');});">Fade Out screen 2 and load another content in same screen using AJAX request</a><br />-->
       <a href="javascript: Tupi.replace('.item2', Tupi.getStaticPage('/tupi/page2.php'));">Fade Out screen 2 and load another content in same screen using AJAX request</a><br />
       <a href="javascript: Tupi.hideShow('.sub-item3-1');">Display screen 3 - subscreen 1 (cascate functionality)</a><br />
       <a href="javascript: Tupi.hideReplace('.sub-item3-2', Tupi.getHtml('/tupi/page3.php', 'name=Username', 'post'));">Display screen 3 - subscreen 2 (cascate functionality with AJAX POST request)</a><br />
@@ -46,7 +44,7 @@
 
     <!-- Loading Javascript files... you will need in the maximum, 3 files, always!!! -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="http://localhost/tupi/js/tupi.js"></script>
+    <script type="text/javascript" src="http://www.danielalvarengacampos.com/tupi/js/tupi.js"></script>
     <script type="text/javascript">
       /*
        * cool transitions to use
